@@ -25,7 +25,7 @@ jobs:
       - name: Run Python file
         run: python app.py
 
-      - name: Biild and Push Docker Image
+      - name: Build and Push Docker Image
         uses: mr-smithers-excellent/docker-build-push@v6
         with:
           image: sudarshankambagalla/docker-build-push
