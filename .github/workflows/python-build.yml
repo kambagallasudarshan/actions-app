@@ -26,9 +26,9 @@ jobs:
         run: python app.py
 
       - name: Biild and Push Docker Image
-        uses: sudarshankambagalla/docker-build-push@v6
+        uses: mr-smithers-excellent/docker-build-push@v6
         with:
-          image: docker-hub-repo/image-name
+          image: sudarshankambagalla/docker-build-push
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
